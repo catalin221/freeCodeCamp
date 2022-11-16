@@ -105,3 +105,12 @@ history -a
 echo ${ARR[@]}
 echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
 history -a
+declare -p
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
+declare -p
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
+declare -p ARR
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
