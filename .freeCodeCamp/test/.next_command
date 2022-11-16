@@ -70,3 +70,9 @@ history -a
 ls --color=auto
 echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
 history -a
+--help pg_dump
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
+pg_dump --help
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
