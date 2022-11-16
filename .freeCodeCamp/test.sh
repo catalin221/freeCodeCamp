@@ -8,9 +8,20 @@ echo ${RESPONSES[$N]}
 
 GET_FORTUNE() {
 
-  echo Ask a yes or no question:
+  if [[ ! $1 ]]
+  then
+    echo Ask a yes or no question:
+    read QUESTION
+  else
+    echo Try again. Make sure it ends with a question mark:
   read QUESTION
+  fi
+
+  until [[ $QUESTION =~ \?$ ]]
+  do
+    GET_FORTUNE
+  done
 }
 
 GET_FORTUNE
-echo $QUESTION
+GET_FORTUNE again
