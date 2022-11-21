@@ -37,3 +37,5 @@ echo hello bash > stdout.txt
 echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
 history -a
 read NAME
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
