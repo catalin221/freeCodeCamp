@@ -24,3 +24,12 @@ history -a
 bad_command > stderr.txt
 echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
 history -a
+stderr 2> stderr.txt
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
+stderr > stderr.txt
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
+bad_command 2> stderr.txt
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
