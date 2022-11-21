@@ -307,3 +307,6 @@ grep -n 'meow[a-z]*' kitty_ipsum_1.txt
 wc -l
 echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
 history -a
+man grep
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
