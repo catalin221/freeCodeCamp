@@ -222,3 +222,12 @@ history -a
 echo -e "\nNumber of characters:" >> kitty_info.txt
 echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
 history -a
+cat kitty_ipsum_1.txt -w < wc >> kitty_info.txt
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
+wc -m kitty_ipsum_1.txt >> kitty_info.txt
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
+wc -m < kitty_ipsum_1.txt >> kitty_info.txt
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
