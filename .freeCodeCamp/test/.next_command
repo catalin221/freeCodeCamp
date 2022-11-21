@@ -310,3 +310,6 @@ history -a
 man grep
 echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
 history -a
+cat name.txt
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
