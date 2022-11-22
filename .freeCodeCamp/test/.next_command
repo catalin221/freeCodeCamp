@@ -469,3 +469,16 @@ history -a
 echo -e "\nNumber of words:" >> kitty_info.txt
 echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
 history -a
+cat kitty_ipsum_2.txt
+wc -w >> kitty_info.txt
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
+cat kitty_ipsum_2.txt -w < wc >> kitty_info.txt
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
+wc -w kitty_ipsum_2.txt >> kitty_info.txt
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
+wc -w < kitty_ipsum_2.txt >> kitty_info.txt
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
