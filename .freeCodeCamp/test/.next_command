@@ -605,3 +605,17 @@ history -a
 echo -e "\nNumber of times cat, cats, or catnip appears:" >> kitty_info.txt
 echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
 history -a
+grep -n 'cat[a-z]*' kitty_ipsum_2.txt
+sed -E 's/([0-9]+).*/\1/' >> kitty_info.txt
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
+grep -n 'cat[a-z]*' kitty_ipsum_2.txt
+sed -E 's/([0-9]+).*/\1/'
+wc -l >> kitty_info.txt
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
+grep -o 'cat[a-z]*' kitty_ipsum_2.txt
+sed -E 's/([0-9]+).*/\1/'
+wc -l >> kitty_info.txt
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
