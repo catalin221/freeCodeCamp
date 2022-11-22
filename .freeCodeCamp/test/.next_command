@@ -702,3 +702,7 @@ history -a
 grep -E --color 'meow[a-z]*|cat[a-z]*'
 echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
 history -a
+./translate.sh kitty_ipsum_2.txt
+grep -E --color 'meow[a-z]*|cat[a-z]*'
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
