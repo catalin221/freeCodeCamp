@@ -169,3 +169,23 @@ echo '28 | Mountain'
 sed 's/ //'
 echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
 history -a
+echo '28 | Mountain'
+sed 's///'
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
+echo '28 Mountain'
+sed 's/ //'
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
+echo '28 Mountain'
+sed 's/ //'
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
+echo '28Mountain'
+sed 's/ //'
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
+echo '28 | Mountain'
+sed 's/ |//'
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
