@@ -271,3 +271,6 @@ history -a
 echo "$(echo ' M e ' | sed -E 's/ *$|^ *//g')."
 echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
 history -a
+./bike-shop.sh
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
