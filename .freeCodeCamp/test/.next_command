@@ -197,3 +197,6 @@ echo '28 | Mountain'
 sed 's/ |/"/'
 echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
 history -a
+./bike-shop.sh
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
