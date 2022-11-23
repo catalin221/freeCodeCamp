@@ -206,3 +206,6 @@ history -a
 echo ' M e '
 echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
 history -a
+echo "$(echo ' M e ')."
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
