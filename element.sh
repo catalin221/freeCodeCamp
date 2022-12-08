@@ -10,11 +10,16 @@ else
   then
     ELEMENT_FOUND=$($PSQL "select atomic_number, atomic_mass, melting_point_celsius, boiling_point_celsius, symbol, name, type from properties join elements using(atomic_number) join types using(type_id) where elements.atomic_number = $1;")
   else
-    ELEMENT_FOUND=$($PSQL "select atomic_number, atomic_mass, melting_point_celsius, boiling_point_celsius, symbol, name, type from properties join elements using(atomic_number) join types using(type_id) where elements.symbol like '$1%' order by atomic_number LIMIT 1;")
+    ELEMENT_FOUND=$($PSQL "select atomic_number, atomic_mass, melting_point_celsius, boiling_point_celsius, symbol, name, type from properties join elements using(atomic_number) join types using(type_id) where elements.name like '$1%' order by atomic_number LIMIT 1;")
   fi
 
   if [[ -z $ELEMENT_FOUND ]]
   then
     echo "I could not find that element in the database."
+  else
+    echo $ELEMENT_FOUND | while IFS=\| read ATOMIC_NUMBER ATOMIC_MASS MELTING_POINT_CELSIUS BOILING_POINT_CELSIUS SYMBOL NAME TYPE
+    do
+      echo "The element with atomic number $ATOMIC_NUMBER is $NAME ($SYMBOL). It's a $TYPE, with a mass of $ATOMIC_MASS amu. $NAME has a melting point of $MELTING_POINT_CELSIUS celsius and a boiling point of $BOILING_POINT_CELSIUS celsius."
+    done
   fi
 fi
