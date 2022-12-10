@@ -1,6 +1,7 @@
 {
 	"author": "Bejinariu Paul Catalin",
 	"description": "A project that does something awesome",
+	"keywords": [ "freecodecamp", "boilerplate", "npm", "node.js" ],
 	"name": "fcc-learn-npm-package-json",
 	"dependencies": {
 		"express": "^4.14.0"
