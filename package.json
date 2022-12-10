@@ -1,8 +1,7 @@
 {
   "author": "Bejinariu Paul Catalin",
   "dependencies": {
-    "express": "^4.14.0",
-    "@freecodecamp/example": "^1.2.13"
+    "express": "^4.14.0"
   },
   "description": "A project that does something awesome",
   "keywords": [ "freecodecamp", "boilerplate", "npm", "node.js" ],
