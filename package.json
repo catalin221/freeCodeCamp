@@ -1,18 +1,19 @@
 {
-	"author": "Bejinariu Paul Catalin",
-	"description": "A project that does something awesome",
-	"keywords": [ "freecodecamp", "boilerplate", "npm", "node.js" ],
-	"license": "freeCodeCamp",
-	"name": "fcc-learn-npm-package-json",
-	"dependencies": {
-		"express": "^4.14.0"
-	},
-	"main": "server.js",
-	"scripts": {
-		"start": "node server.js"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://idontknow/todo.git"
-	}
+  "author": "Bejinariu Paul Catalin",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "description": "A project that does something awesome",
+  "keywords": [ "freecodecamp", "boilerplate", "npm", "node.js" ],
+  "license": "freeCodeCamp",
+  "main": "server.js",
+  "name": "fcc-learn-npm-package-json",
+  "repository": {
+    "type": "git",
+    "url": "https://idontknow/todo.git"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "version": "1.0.0"
 }
