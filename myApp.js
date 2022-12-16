@@ -19,6 +19,11 @@ app.get("/json", (req, res) => {
     }
 });
 
+app.use((req,res, next) => {
+    console.log(req.method.toString() + ' ' + req.path.toString() + " - " + req.ip.toString());
+    next();
+})
+
 
 
 
