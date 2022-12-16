@@ -20,7 +20,7 @@ app.get("/json", (req, res) => {
 });
 
 app.use(function middleware(req,res, next) {
-    console.log(req.method.toString() + ' ' + req.path.toString() + " - " + req.ip.toString());
+    console.log(req.method + ' ' + req.path + " - " + req.ip);
     next();
 })
 
