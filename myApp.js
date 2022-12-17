@@ -1,4 +1,5 @@
 require('dotenv').config();
+var bodyParser = require('body-parser');
 
 const e = require('express');
 let express = require('express');
@@ -11,6 +12,7 @@ app.use((req, res, next) => {
 
 app.get("/", (req, res) => { res.sendFile(__dirname + "/views/index.html") });
 
+app.use(bodyParser.urlencoded({extended : false}));
 app.use("/public", express.static(__dirname + "/public"));
 
 app.get("/json", (req, res) => {
@@ -49,6 +51,8 @@ app.get("/name", (req, res) => {
         name: `${firstName} ${lastName}`
     })
 })
+
+app.use
 
 
 
