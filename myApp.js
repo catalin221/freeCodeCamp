@@ -56,6 +56,12 @@ app.post("/name", (req, res) => {
     res.json({ name: fullName });
 });
 
+app.get("/:word/echo", (req, res) => {
+    res.json({
+        echo: req.params.word
+    })
+});
+
 
 
 
