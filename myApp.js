@@ -1,7 +1,8 @@
 require('dotenv').config();
 let moongoose = require('mongoose');
 
-moongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+moongoose.connect('mongodb+srv://catalin221:xqLpbr4ftyur7829@cluster0.qtwfddd.mongodb.net/?retryWrites=true&w=majority',
+ { useNewUrlParser: true, useUnifiedTopology: true });
 
 
 let Person;
