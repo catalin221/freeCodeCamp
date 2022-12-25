@@ -1,8 +1,16 @@
 require('dotenv').config();
+require('mongoose').connect('mongodb+srv://catalin221:xqLpbr4ftyur7829@cluster0.qtwfddd.mongodb.net/?retryWrites=true&w=majority', 
+{ useNewUrlParser: true, useUnifiedTopology: true });
+
+
+// mongo.connect('mongodb+srv://catalin221:xqLpbr4ftyur7829@cluster0.qtwfddd.mongodb.net/?retryWrites=true&w=majority', 
+//             { useNewUrlParser: true, useUnifiedTopology: true });
+
 var bodyParser = require('body-parser');
 
 const e = require('express');
 let express = require('express');
+const { Mongoose, mongo } = require('mongoose');
 let app = express();
 
 app.use(bodyParser.urlencoded({extended : false}));
