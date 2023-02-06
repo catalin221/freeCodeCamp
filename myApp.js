@@ -4,19 +4,17 @@ let moongoose = require('mongoose');
 moongoose.connect('mongodb+srv://catalin221:xqLpbr4ftyur7829@cluster0.qtwfddd.mongodb.net/?retryWrites=true&w=majority',
  { useNewUrlParser: true, useUnifiedTopology: true });
 
-let personSchema = moongoose.Schema({
+let personSchema = new moongoose.Schema({
   name: {
     type: String,
     required: true
   },
   age: Number,
-  favoriteFoods: Array[String]
+  favoriteFoods: [String]
 });
-module.exports = moongoose.model('Person', personSchema);
+let PersonModel = moongoose.model('Person', personSchema);
 
-let personModel = require('./person');
-
-let Person = new personModel();
+let Person = new PersonModel();
 
 const createAndSavePerson = (done) => {
   done(null /*, data*/);
