@@ -4,7 +4,7 @@ let moongoose = require('mongoose');
 moongoose.connect('mongodb+srv://catalin221:xqLpbr4ftyur7829@cluster0.qtwfddd.mongodb.net/?retryWrites=true&w=majority',
  { useNewUrlParser: true, useUnifiedTopology: true });
 
-let personSchema = new moongoose.Schema({
+ let personSchema = new moongoose.Schema({
   name: {
     type: String,
     required: true
@@ -12,9 +12,8 @@ let personSchema = new moongoose.Schema({
   age: Number,
   favoriteFoods: [String]
 });
-let PersonModel = moongoose.model('Person', personSchema);
 
-let Person = new PersonModel();
+let Person;
 
 const createAndSavePerson = (done) => {
   done(null /*, data*/);
