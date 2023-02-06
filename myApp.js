@@ -1,10 +1,10 @@
 require('dotenv').config();
-let moongoose = require('mongoose');
+let mongoose = require('mongoose');
 
-moongoose.connect('mongodb+srv://catalin221:xqLpbr4ftyur7829@cluster0.qtwfddd.mongodb.net/?retryWrites=true&w=majority',
+mongoose.connect('mongodb+srv://catalin221:xqLpbr4ftyur7829@cluster0.qtwfddd.mongodb.net/?retryWrites=true&w=majority',
  { useNewUrlParser: true, useUnifiedTopology: true });
 
- let personSchema = new moongoose.Schema({
+ let personSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true
@@ -13,7 +13,7 @@ moongoose.connect('mongodb+srv://catalin221:xqLpbr4ftyur7829@cluster0.qtwfddd.mo
   favoriteFoods: [String]
 });
 
-let Person;
+var Person = mongoose.model('Person', personSchema);
 
 const createAndSavePerson = (done) => {
   done(null /*, data*/);
