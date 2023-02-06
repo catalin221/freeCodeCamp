@@ -14,7 +14,9 @@ let personSchema = moongoose.Schema({
 });
 module.exports = moongoose.model('Person', personSchema);
 
-let Person;
+let personModel = require('./person');
+
+let Person = new personModel();
 
 const createAndSavePerson = (done) => {
   done(null /*, data*/);
