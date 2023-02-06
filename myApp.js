@@ -4,6 +4,15 @@ let moongoose = require('mongoose');
 moongoose.connect('mongodb+srv://catalin221:xqLpbr4ftyur7829@cluster0.qtwfddd.mongodb.net/?retryWrites=true&w=majority',
  { useNewUrlParser: true, useUnifiedTopology: true });
 
+let personSchema = moongoose.Schema({
+  name: {
+    type: String,
+    required: true
+  },
+  age: Number,
+  favoriteFoods: Array[String]
+});
+module.exports = moongoose.model('Person', personSchema);
 
 let Person;
 
