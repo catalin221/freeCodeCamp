@@ -12,12 +12,16 @@ mongoose.connect('mongodb+srv://catalin221:xqLpbr4ftyur7829@cluster0.qtwfddd.mon
 
 const Person = mongoose.model("Person", personSchema);
 
-// let me = new Person({
-//   name: "Paul"
-// });
-
 const createAndSavePerson = (done) => {
-  done(null /*, data*/);
+  var me = new Person({
+    name: "Paul", age: "24", favoriteFoods: ["cheeseburber", "peesha"]
+  });
+
+  me.save(function(err, data) {
+    if(err) return console.log(err);
+    done(null, data);
+  })
+  done(null , data);
 };
 
 const createManyPeople = (arrayOfPeople, done) => {
