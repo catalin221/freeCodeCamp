@@ -4,16 +4,13 @@ let mongoose = require('mongoose');
 mongoose.connect('mongodb+srv://catalin221:xqLpbr4ftyur7829@cluster0.qtwfddd.mongodb.net/?retryWrites=true&w=majority',
  { useNewUrlParser: true, useUnifiedTopology: true });
 
- let personSchema = new mongoose.Schema({
-  name: {
-    type: String,
-    required: true
-  },
+ const personSchema = new mongoose.Schema({
+  name: { type: String, required: true },
   age: Number,
   favoriteFoods: [String]
 });
 
-var Person = mongoose.model('Person', personSchema);
+const Person = mongoose.model("Person", personSchema);
 
 // let me = new Person({
 //   name: "Paul"
