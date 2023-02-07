@@ -12,8 +12,8 @@ mongoose.connect('mongodb+srv://catalin221:xqLpbr4ftyur7829@cluster0.qtwfddd.mon
 
 const Person = mongoose.model("Person", personSchema);
 
-const createAndSavePerson = (done) => {
-  var me = new Person({
+var createAndSavePerson = (done) => {
+  let me = new Person({
     name: "Paul", age: "24", favoriteFoods: ["cheeseburber", "peesha"]
   });
 
